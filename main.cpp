@@ -1,8 +1,10 @@
+#include <Windows.h>
 #include "OVR_CAPI.h"
 
-#include <iostream>
 
-int main(int argc, char** argv)
+int WINAPI WinMain(HINSTANCE hinst, HINSTANCE, LPSTR, int)
 {
-	std::cout << "Hello, world\n";
+	// Initializes LibOVR, and the Rift
+	ovr_Initialize();
+
 }
